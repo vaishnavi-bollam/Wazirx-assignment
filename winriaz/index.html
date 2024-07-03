@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cryptocurrency Prices</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>HODLINFO</h1>
+      <div class="controls">
+        <select id="currency-select">
+          <option value="INR">INR</option>
+        </select>
+        <select id="crypto-select">
+          <option value="BTC">BTC</option>
+        </select>
+        <button id="buy-btn">BUY BTC</button>
+      </div>
+      <div class="connect-telegram">
+        <div id="timer" class="span-el"></div>
+        <button id="connect-telegram-btn" class="span-el">
+          Connect Telegram
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="price-info">
+        <p class="span-el">Best Price to Trade</p>
+        <h2 class="span-el">&#8377; 53,33,829</h2>
+        <p class="span-el">Average BTC/INR net price including commission</p>
+      </div>
+      <div class="stats">
+        <span class="span-el">0.3% 5 Mins</span>
+        <span class="span-el">1.29% 1 Hour</span>
+        <span class="span-el">6.87% 1 Day</span>
+        <span class="span-el">13.3% 7 Days</span>
+      </div>
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Platform</th>
+            <th>Last Traded Price</th>
+            <th>Buy Price</th>
+            <th>Sell Price</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </main>
+    <footer>
+      <button id="add-to-home-btn">Add hodlinfo to home screen</button>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
